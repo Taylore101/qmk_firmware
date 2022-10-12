@@ -18,6 +18,13 @@
 
 #include "config_common.h"
 
+/* USB Device descriptor parameter */
+#define VENDOR_ID       0xFEED
+#define PRODUCT_ID      0x1010
+#define DEVICE_VER      0x0001
+#define MANUFACTURER    Taylore101
+#define PRODUCT         BigMac
+
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 17
@@ -32,7 +39,20 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { F0, F1, C7, D5, B7 }
-#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5, F4, D3, D2, D1, D0, D4, C6, D7, E6, B4 }
+#define MATRIX_ROW_PINS { B7, D5, C7, F1, F0 }
+#define MATRIX_COL_PINS { D3, D1, D0, D4, C6, D7, E6, B4, B5, B6, B2, B3, B1, F7, F6, F5, F4 }
 
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
+
+//LEDs
+#define RGB_DI_PIN B0
+#define RGBLED_NUM 20
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+//#define RGBLIGHT_LIMIT_VAL 200
+#define LED_CAPS_LOCK_PIN D2
+
+//define default rgb color
+#define RGBLIGHT_DEFAULT_HUE 169
+
