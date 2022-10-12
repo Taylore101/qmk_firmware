@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x4256
 #define DEVICE_VER      0x0400
 #define MANUFACTURER    Keebio
-#define PRODUCT         Keebio Iris Rev. 4
+#define PRODUCT         Iris Rev. 4
 
 /* key matrix size */
 // Rows are doubled-up
